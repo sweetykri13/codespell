@@ -1,0 +1,14 @@
+def is_palindrome(string):
+    # Remove spaces and convert to lowercase for case-insensitive comparison
+    string = string.replace(" ", "").lower()
+    
+    # Check if the string is equal to its reverse
+    return string == string[::-1]
+
+# Input a string from the user
+user_input = input("Enter a string: ")
+
+if is_palindrome(user_input):
+    print(f"{user_input} is a palindrome!")
+else:
+    print(f"{user_input} is not a palindrome.")
